@@ -11,7 +11,9 @@ for instance if the user sets the path to /shares, then the exported directories
 /shares/video
 /shares/audio
 
-the user can also configure a single host that the share will be exported to, together with the export mode - rw for read/write and ro for read only.
+The user can also configure a single host that the share will be exported to, together with the export mode - rw for read/write and ro for read only. 
+That means that the share can be only mounted on host specified.
+
 
 Hints: 
 1) To export a directory over NFS, there must be the nfs-server service running (nfs-utils package)
