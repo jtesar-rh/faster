@@ -1,0 +1,26 @@
+Create role that configures servera as an NFS server, providing 3 shares
+
+documents      
+video          
+audio
+
+Users of the role can configure the common path for the exports.
+for instance if the user sets the path to /shares, then the exported directories will be
+
+/shares/documents
+/shares/video
+/shares/audio
+
+the user can also configure a single host that the share will be exported to, together with the export mode - rw for read/write and ro for read only.
+
+Hints: 
+1) To export a directory over NFS, there must be the nfs-server service running (nfs-utils package)
+2) NFS port has to be opened in the firewall (there is nfs service defined in firewalld
+3) To export a directory an entry in /etc/exports needs to be created. The format is following:
+
+/exports/docs    host.example.com(rw)
+
+This means that directory /exports/docs is possible to mount on host.example.com read/write
+
+To create initial role structure you can use:
+ansible-galaxy role init <role-name>

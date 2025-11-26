@@ -1,0 +1,21 @@
+---
+ansible-navigator:
+  ansible:
+    config:
+      path: ./ansible.cfg
+    playbook:
+      path: playbook.yaml
+  app: run
+  execution-environment:
+    container-engine: podman
+    enabled: true
+    image: utility.lab.example.com/ee-supported-rhel8
+    pull:
+      policy: missing
+  logging:
+    append: false
+    file: ansible-navigator.log
+    level: info
+  mode: stdout
+  playbook-artifact:
+    enable: false
