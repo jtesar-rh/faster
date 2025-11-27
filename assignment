@@ -23,6 +23,3 @@ Hints:
 /exports/docs    host.example.com(rw)
 
 This means that directory /exports/docs is possible to mount on host.example.com read/write
-
-To create initial role structure you can use:
-ansible-galaxy role init <role-name>

@@ -1,0 +1,5 @@
+- hosts: servera
+  user: devops
+  become: true
+  roles:
+    - nfs

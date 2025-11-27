@@ -1,0 +1,4 @@
+2025-11-27T07:45:30.216813+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2025-11-27T07:45:30.217124+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2025-11-27T07:45:30.217327+00:00 INFO 'ansible_navigator.main' EE support enabled: found 'ansible.cfg' in current working directory.
+2025-11-27T07:45:30.217469+00:00 INFO 'ansible_navigator.image_manager.puller._log_message' Image tag is: latest
